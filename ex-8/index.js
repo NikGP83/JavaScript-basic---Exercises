@@ -7,7 +7,11 @@ const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1)) + mi
 
 let guesNumber = getRandom(1, 10);
 
-const usersTry = () => {     
+const usersTry = () => {
+   if((+userInput.value) > 10) {
+      alert(`Only 1 to 10 numbers`)
+      return      
+   }     
    if(guesNumber === (+userInput.value)) {
       alert(`Good Work`)      
    }
