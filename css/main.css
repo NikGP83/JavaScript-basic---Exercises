@@ -8,6 +8,12 @@
 }
 
 .calc {    
-    width: 330px;    
+    width: 280px;    
     margin-bottom: 20px;
+}
+
+.calc-result {
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
