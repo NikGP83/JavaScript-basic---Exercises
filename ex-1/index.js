@@ -4,24 +4,21 @@ const dayOfWeekArr = [`Sunday`,`Monday`,`Tuesday`,`Wednesday `,`Thursday`,`Frida
 
 const newD = new Date().toString().split(' ');
 const getTrueDay  = new Date().getDay();
-
-const container = `<p><p><br>`;
-
-
 const dayOfWeek = dayOfWeekArr[getTrueDay - 1];
-console.log(newD, dayOfWeek);
 
 const showTime = () => {
     const utcHour = new Date().getHours();
     const minutes = new Date().getMinutes();
     const seconds = new Date().getSeconds();
     const partOfDay = `${utcHour > 12 ?  `PM` : `AM`}`;
-    const container = `<p>Today is: ${dayOfWeek}<p>`;
 
-
-let timer = `Current time is: ${utcHour} ${partOfDay} : ${minutes} : ${seconds}`; 
+let timer = `Current time is: ${utcHour} ${partOfDay} : ${minutes} : ${seconds} `; 
 currentDate.textContent = timer;
-currentDate.insertAdjacentHTML(`afterbegin`, container);
+
+
+const container = document.createTextNode(`   Today is: ${dayOfWeek}`);
+currentDate.appendChild(container);
+
 setTimeout(showTime, 1000);
 }
 
