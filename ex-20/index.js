@@ -1,9 +1,13 @@
-const isPositiveNum = (num) => (num % 2 === 0);
-
-const checkPositiveOrNegativeNum = (one, two) => {
-    let checkOne = isPositiveNum(one);
-    let checkTwo = isPositiveNum(two);
-    console.log(checkOne, checkTwo);
+const checkPositiveOrNegativeNum = (oneIntg, twoIntg) => {
+    let checkOne = Math.sign(oneIntg);
+    let checkTwo = Math.sign(twoIntg);
+    if (checkOne === 1 && checkTwo === 1) {
+        console.log(false)
+    }
+    else {
+        console.log(true)
+    };
 }
 
-checkPositiveOrNegativeNum(3, 4);
+checkPositiveOrNegativeNum(-2, 4);
+
