@@ -1,3 +1,3 @@
-const checkStr = (str) => str.indexOf(`Py`) > -1 ? str : `Py` + str;
+const checkStr = (str) => str.indexOf(`Py`) === 0 ? str : `Py` + str;
 
 console.log(checkStr(`notepad`));

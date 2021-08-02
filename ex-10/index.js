@@ -10,12 +10,10 @@ const getCalc = (evt) => {
 };
 
 const getMultiply = () => {
-    calcResultInpt.value = ``;
     calcResultInpt.value = (+firstNumber.value) * (+secondNumber.value);
 };
 
 const getDivide = () => {
-    calcResultInpt.value = ``;
     calcResultInpt.value = (+firstNumber.value) / (+secondNumber.value);
 };
 
