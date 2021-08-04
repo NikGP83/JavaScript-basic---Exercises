@@ -1,3 +1,6 @@
+// Write a JavaScript program to calculate multiplication and division of two numbers (input from user). 
+
+
 const calculateForm = document.querySelector(`.calc`);
 const firstNumber = document.querySelector(`.one-n`);
 const secondNumber = document.querySelector(`.two-n`);
