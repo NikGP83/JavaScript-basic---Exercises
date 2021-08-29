@@ -13,3 +13,6 @@ const concatTwoStrgs = (strOne, strTwo) => {
 // } 
 
 console.log(concatTwoStrgs(`Арбузный`, `Вишнёвоклёвый`));
+
+
+//WIP !!!!!!
