@@ -1,16 +1,14 @@
 // Write a program to check whether a specified character exists within the 2nd to 4th position in a given string. 
 
-let chr = `n`;
 
-const checkChrtr = (str) =>  {
-         let result = str.indexOf(chr, 2)
-         if (result >= 2 || result <= 4) {
-             return result;
-         }
-         else {
-             false;
-         }
-     }; 
+const FIRST = 2;
+const LAST = 4;
 
-console.log(checkChrtr(`isnos`));
+const range = {low:FIRST-1, hi:LAST}; 
+
+const inRange = (value, range)=> range.low<=value && value <= range.hi;
+
+const checkChrtr = (c, str)=>inRange(str.indexOf(c), range);
+
+console.log(checkChrtr("y", "Python"));
 
