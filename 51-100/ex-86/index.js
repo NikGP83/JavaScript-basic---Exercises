@@ -28,8 +28,9 @@ export const checkAngle = (angle) => {
             return terms.obtuse;
         case angle === 180:
             return terms.straight;
-        default: throw new Error(`Ошибка`);
-
+        default:            
+            throw new Error(`Ошибка`);
+            
     }
 };
 
