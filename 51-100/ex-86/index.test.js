@@ -6,7 +6,7 @@ describe("поведение задачи 86", () => {
     });
 
     it("return acute", () => {
-        expect(checkAngle(90)).toBe(terms.acute)
+        expect(checkAngle(76)).toBe(terms.acute)
     });
 
     it("returns right", () => {
@@ -22,6 +22,6 @@ describe("поведение задачи 86", () => {
     });
 
     it("returns error", () => {
-        expect(checkAngle(203)).toThrow()
+        expect(checkAngle(209)).toThrow()
     });
 });
